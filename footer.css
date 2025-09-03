@@ -1,0 +1,102 @@
+.site-footer-gb {
+  background: linear-gradient(135deg, #111, #1e1e1e); /* ดำ-เทา */
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 2px solid #ffd700; /* เส้นทอง */
+  font-family: "Kanit", sans-serif;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.site-footer-gb .footer-links-gb h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffd700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-desc-gb {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: left;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-grid ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px;
+  border-left: 1px solid #333;
+}
+
+.footer-grid ul:first-child {
+  border-left: none;
+}
+
+.footer-grid ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  transition: transform 0.3s ease;
+}
+
+.footer-grid ul li:hover {
+  transform: translateX(3px);
+}
+
+.footer-grid ul li a {
+  text-decoration: none;
+  color: #bbb; /* เทาอ่อน */
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.footer-grid ul li a:hover {
+  color: #ffd700; /* ทอง */
+  text-shadow: 0 0 6px rgba(255, 215, 0, 0.6);
+}
+
+.site-footer-gb .copy-gb {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 12px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-grid ul {
+    border-left: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center; /* ✅ จัดกลางในมือถือ */
+  }
+
+  .footer-grid ul {
+    border-left: none;
+    padding: 0;
+  }
+
+  .footer-grid ul li {
+    text-align: center; /* ✅ ให้ li จัดกลาง */
+  }
+}
